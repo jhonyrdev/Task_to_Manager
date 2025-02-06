@@ -22,7 +22,6 @@ const Index = () => {
 
   const fetchTasks = async () => {
     try {
-      console.log("Inicio de fetchTasks");
       const response = await fetch(`${URL}/tasks`);
       const data = await response.json();
       setTasks(data);
@@ -36,7 +35,6 @@ const Index = () => {
     description: string;
     dueDate: string;
   }) => {
-    console.log("Creating task with data:", taskData);
     const mappedTaskData = {
       name: taskData.name,
       description: taskData.description,
