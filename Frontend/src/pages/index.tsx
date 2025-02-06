@@ -125,7 +125,6 @@ const Index = () => {
   };
 
   const handleCompleteTask = async (task: Task) => {
-    console.log("Task ID being sent:", task.id);
     try {
       const response = await fetch(`${URL}/tasks/${task.id}`, {
         method: "PUT",
