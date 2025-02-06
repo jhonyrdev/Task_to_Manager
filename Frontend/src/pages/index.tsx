@@ -17,8 +17,6 @@ const Index = () => {
 
   useEffect(() => {
     // Cargar tareas desde el backend
-    console.log("Componente montado");
-  console.log("Fetching tasks");
     fetchTasks();
   }, []);
 
@@ -27,9 +25,7 @@ const Index = () => {
       console.log("Inicio de fetchTasks");
       const response = await fetch(`${URL}/tasks`);
       const data = await response.json();
-      console.log("Fetched tasks: ", data);
       setTasks(data);
-      console.log("Fin de fetchTasks");
     } catch (error) {
       console.error("Error fetching tasks:", error);
     }
@@ -57,7 +53,6 @@ const Index = () => {
         body: JSON.stringify(mappedTaskData),
       });
       const newTask = await response.json();
-      console.log(newTask);
       setTasks((prevTasks) => [...prevTasks, newTask]);
       toast({
         title: "Task created",
@@ -146,15 +141,10 @@ const Index = () => {
       });
       const updatedTask = await response.json();
       
-      // Verifica qué tiene 'updatedTask'
-      console.log("Before Updated task:", updatedTask);
-      
       const updatedTasks = tasks.map((t) =>
         t.id === task.id ? { ...t, isCompleted: updatedTask.isCompleted } : t
       );
       setTasks(updatedTasks);
-
-      console.log("After Updated task:", updatedTask);
       
       toast({
         title: task.isCompleted ? "Task uncompleted" : "Task completed",
