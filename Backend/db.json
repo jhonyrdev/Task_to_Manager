@@ -1,18 +1,25 @@
 {
   "tasks": [
     {
-      "id": "d168e1be-474c-4c42-8693-1eba1de8bcca",
-      "name": "Comprar 10 paquetes",
-      "description": "Componentes de Pc de Escritorio",
-      "dueDate": "2025-02-08T00:00:00.000Z",
-      "isCompleted": true
+      "id": "b8703ff3-0def-4125-9a4e-a754dd2007ba",
+      "name": "Ejemplo 1 tarea completada",
+      "description": "Ejemplo de la descripción de la tarea",
+      "dueDate": "2025-02-28T00:00:00.000Z",
+      "isCompleted": false
     },
     {
-      "id": "99737d1c-81cc-497d-a34c-9833c1446ed8",
-      "name": "hhh",
-      "description": "fffff",
-      "dueDate": "2025-02-13T00:00:00.000Z",
-      "isCompleted": true
+      "id": "724714be-53ee-49d2-828a-4d8e63180093",
+      "name": "Ejemplo 2da tarea Completada",
+      "description": "Ejemplo de la descripcion de la tarea",
+      "dueDate": "2025-03-01T05:00:00.000Z",
+      "isCompleted": false
+    },
+    {
+      "id": "c5c11beb-1bf4-42ae-b08a-03f9eddb5130",
+      "name": "Ejemplo 3era tarea completada",
+      "description": "Detalles",
+      "dueDate": "2025-04-26T00:00:00.000Z",
+      "isCompleted": false
     }
   ]
 }
